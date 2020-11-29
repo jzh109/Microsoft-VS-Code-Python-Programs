@@ -12,7 +12,6 @@ def main():
     temp = int(gcd(a[0], a[1]))
     res = (temp, int(a[0] * a[1] / temp))
     print(res)
-    print()
     print(type(res))
 
 
