@@ -18,28 +18,28 @@ class Fan:
         self.__on = on
         self.__speed = speed
 
-    def setOn(self, v):
+    def setOn(self, v: bool) -> None:
         self.__on = v
 
-    def setColor(self, v):
+    def setColor(self, v: str) -> None:
         self.__color = v
 
-    def setSpeed(self, v):
+    def setSpeed(self, v: int) -> None:
         self.__speed = v
 
-    def setRadius(self, v):
+    def setRadius(self, v: float) -> None:
         self.__radius = v
 
-    def getColor(self):
+    def getColor(self) -> str:
         return self.__color
 
-    def getOn(self):
+    def getOn(self) -> bool:
         return self.__on
 
-    def getRadius(self):
+    def getRadius(self) -> float:
         return self.__radius
 
-    def getSpeed(self):
+    def getSpeed(self) -> int:
         return self.__speed
 
 

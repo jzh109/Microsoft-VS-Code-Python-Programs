@@ -1,34 +1,35 @@
 class Stock:
-    def __init__(self, symbol, name, previousClosingPrice, currentPrice):
+    def __init__(self, symbol: str, name: str, previousClosingPrice: float,
+                 currentPrice: float):
         self.__stockSymbol = symbol
         self.__name = name
         self.__previousClosingPrice = previousClosingPrice
         self.__currentPrice = currentPrice
 
     @property
-    def getsymbol(self):
+    def getsymbol(self) -> str:
         return self.__stockSymbol
 
     @property
-    def getname(self):
+    def getname(self) -> str:
         return self.__name
 
-    def getPreviousClosingPrice(self):
+    def getPreviousClosingPrice(self) -> float:
         return self.__previousClosingPrice
 
-    def getCurrentPrice(self):
+    def getCurrentPrice(self) -> float:
         return self.__currentPrice
 
-    def getChangePercent(self):
+    def getChangePercent(self) -> str:
         s = (self.__previousClosingPrice -
              self.__currentPrice) / self.__currentPrice
         s = '{0:%}'.format(s)
         return s
 
-    def setPreviousClosingPrice(self, v):
+    def setPreviousClosingPrice(self, v: float) -> None:
         self.__previousClosingPrice = v
 
-    def setCurrentPrice(self, v):
+    def setCurrentPrice(self, v: float) -> None:
         self.__currentPrice = v
 
 

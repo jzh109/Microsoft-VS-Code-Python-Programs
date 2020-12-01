@@ -5,34 +5,34 @@ class Account:
         self.__annualInterestRate = annualInterestRate / 100
         self.__monthlyInterestRate = self.__annualInterestRate / 12
 
-    def getId(self):
+    def getId(self) -> int:
         return self.__id
 
-    def getbalance(self):
+    def getBalance(self) -> float:
         return self.__balance
 
-    def getAnnualInterestRate(self):
+    def getAnnualInterestRate(self) -> str:
         return '%f%%' % self.__annualInterestRate
 
-    def getMonthlyInterestRate(self):
+    def getMonthlyInterestRate(self) -> str:
         return '%f%%' % self.__monthlyInterestRate
 
-    def getMonthlyInterest(self):
+    def getMonthlyInterest(self) -> float:
         return self.__balance * self.__monthlyInterestRate
 
-    def withdraw(self, v):
+    def withdraw(self, v: float) -> None:
         self.__balance -= v
 
-    def deposit(self, v):
+    def deposit(self, v: float) -> None:
         self.__balance += v
 
-    def setId(self, id):
+    def setId(self, id: int) -> None:
         self.__id = id
 
-    def setBalance(self, v):
+    def setBalance(self, v: float) -> None:
         self.__balance = v
 
-    def setAnnualInterestRate(self, v):
+    def setAnnualInterestRate(self, v: float) -> None:
         self.__annualInterestRate = v / 100
 
 

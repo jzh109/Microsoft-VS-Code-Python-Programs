@@ -1,7 +1,7 @@
 def main():
     temp = list(map(int, input().split()))
     n = temp[0]
-    k = temp[1]
+    k = temp[1] - 1
     point = 0
     li = []
     for i in range(1, n + 1):
