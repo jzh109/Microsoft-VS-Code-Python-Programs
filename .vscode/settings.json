@@ -9,6 +9,7 @@
     "task.saveBeforeRun": "always",
     "code-runner.saveAllFilesBeforeRun": true,
     "code-runner.runInTerminal": true,
+    "editor.mouseWheelZoom": true,
     "code-runner.executorMap": {
         "javascript": "node",
         "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
@@ -57,5 +58,8 @@
         "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
-    }
+    },
+    "cSpell.words": [
+        "mysum"
+    ]
 }
